@@ -9,27 +9,49 @@ ul {
 }
 .app > h1 {
   text-align: center;
+  font-size: 50px;
 }
 
 .body-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: minmax(100px, auto);
 }
-.body-box > :nth-child(odd) {
-  background-color: bisque;
-  padding: 10px;
-}
-.body-box > :nth-child(even) {
-  background-color: aqua;
-  padding: 10px;
+
+.body-box > div {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 20px;
 
 }
+
 
 .add-form {
-  margin-top: 30px;
+  /* width: 200px; */
   display: grid;
-  max-width: 200px;
   grid-row-gap: 5px;
+  /* height: 100%; */
+}
+
+
+
+
+
+.finalize {
+  display: grid;
+  grid-row-gap: 5px;
+  
+}
+
+#input {
+  width: 192px; 
+}
+.submit-btn {
+  font-size: 16px;
+  width: 200px;
+  height: 30px;
+}
+.winner-label {
+  font-size: 20px;
 }
