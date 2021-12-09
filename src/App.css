@@ -1,5 +1,23 @@
+body {
+  background-color: rgba(0, 0, 0, .02);
+}
+
+h1 {
+  letter-spacing: 2px;
+  color: rgb(0, 84, 112);
+  background-color: rgb(253, 209, 209);
+
+}
 ul {
-  padding: 0;
+  /* padding: 0; */
+}
+li {
+  height: 25px;
+  /* list-style: none; */
+  text-transform: capitalize;
+}
+button:hover{
+  cursor: pointer;
 }
 
 .app {
@@ -26,32 +44,101 @@ ul {
 
 }
 
-
-.add-form {
-  /* width: 200px; */
-  display: grid;
-  grid-row-gap: 5px;
-  /* height: 100%; */
+.listBox h3, .listBox ul {
+  margin-left: 30px;
 }
 
 
 
 
+.add-form {
+  display: grid;
+  grid-gap: 5px;
+}
 
 .finalize {
-  display: grid;
-  grid-row-gap: 5px;
-  
+  display: flex;
+  flex-direction: column;
+
 }
 
 #input {
   width: 192px; 
+  font-size: 20px;
 }
 .submit-btn {
   font-size: 16px;
   width: 200px;
-  height: 30px;
+  /* position: absolute;
+  bottom: 0; */
 }
 .winner-label {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+.rankTable {
+  border-collapse: collapse;
+  padding: 10px;
+  width: 100%;
+  /* background-color: lightskyblue; */
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.rankTable thead tr {
+  border-top: 1px solid silver;
+
+  border-bottom: 1px solid silver;
+  background-color: lightblue;
+}
+
+.rankTable tbody tr {
+  height: 25px;
+}
+
+.rankTable tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, .05);
+}
+
+
+.bottomBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+
+}
+.bottomBox h2 {
+  color: red;
+}
+
+.votingSection select {
+  width: 200px;
+  height: 25px;
+  text-transform: capitalize;
+}
+.votingSection button {
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgb(0, 84, 112);
+  width: 200px;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  display: block;
+}
+
+.onlyManager {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: relative;
+}
+
+.errorMessage {
+  color: red;
 }

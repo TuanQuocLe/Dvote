@@ -1,4 +1,4 @@
-pragma solidity ^0.8.10;
+pragma solidity ^0.4.17;
 
 contract Dvote {
     address public manager;
@@ -15,21 +15,24 @@ contract Dvote {
         uint voteCount;
     }
 
+    function getCandidatesCount() public view returns (uint) {
+        return Candidates.length;
+    }
 
 
-    constructor ( string memory _name) {
+    function Dvote ( string memory _name) {
         manager = msg.sender;
         contractName = _name;
     }
 
     function addCandidate ( string memory newCandidateName) public managerOnly {
-        // CandidateInfo memory newCandidate = CandidateInfo({
-        //     name: newCandidateName,
-        //     voteCount:0
-        // });
-
-        CandidateInfo storage newCandidate = Candidates.push();
-        newCandidate.name = newCandidateName;
+        CandidateInfo memory newCandidate = CandidateInfo({
+            name: newCandidateName,
+            voteCount:0
+        });
+        Candidates.push(newCandidate);
+        // CandidateInfo storage newCandidate = Candidates.push();
+        // newCandidate.name = newCandidateName;
     }
 
     function vote (uint index) public {
