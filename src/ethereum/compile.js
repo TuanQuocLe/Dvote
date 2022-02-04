@@ -1,11 +1,4 @@
-// const path = require("path");
-// const fs = require("fs");
-// const solc = require("solc");
 
-// const DvotePath = path.resolve(__dirname, "contract", "Dvote.sol");
-// const source = fs.readFileSync(DvotePath, "utf8");
-// const cc = solc.compile(source, 1).contracts[':Dvote'];
-// module.exports = cc
 
 const path = require("path");
 const solc = require("solc");

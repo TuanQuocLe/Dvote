@@ -76,8 +76,9 @@ const App = () => {
     
   }
   return (
+    <>
+    <h1>DElection 2020</h1>
     <div className='app' >
-      <h1>DElection 2020</h1>
       <div className='body-box'>
         <div>
           <h3>RANKING</h3>
@@ -118,34 +119,40 @@ const App = () => {
           {selectedC != 10000 && <button onClick={vote}>{loading ? 'processing...' : 'Vote'}</button>}
         </div>
 
-        <div className='onlyManager'>
-          <div className='add-form'>
-              <h3>Add candidate!</h3>
-              <input 
-                id='input' 
-                value={input} 
-                onChange={
-                  event => setInput(event.target.value)
-                }/>
-              <button 
-
-                className='submit-btn'
-                onClick={addCandidate}
-              >{loading ? 'proccessing...' : 'Submit'}</button>
-          </div>
-          <div className='finalize'>
-            <h3>{ winner && winner}</h3>
-              <label className='winner-label'>
-                Finalize Election!
-              </label>
-              <button onClick={finalizeElection} className='submit-btn'>GET WINNER!</button>
+        <div >
+          <h2>MANAGER SECTION</h2>
+          <div className='onlyManager'>
+            <div className='add-form'>
+                <h4>Add candidate!</h4>
+                <input 
+                  id='input' 
+                  value={input} 
+                  onChange={
+                    event => setInput(event.target.value)
+                  }/>
+                <button 
+                  className='submit-btn'
+                  onClick={addCandidate}
+                  >
+                    {loading ? 'proccessing...' : 'Submit'}
+                  </button>
             </div>
+            <div className='finalize'>
+              <h3>{ winner && winner}</h3>
+                <h4 >
+                  Finalize Election!
+                </h4>
+                <button onClick={finalizeElection} className='submit-btn'>GET WINNER!</button>
+              </div>
+            </div>
+
           </div>
 
-        </div>
+          </div>
         {message && <h3 className='errorMessage'>{message}</h3>}
 
     </div>
+</>
   );
 }
 
