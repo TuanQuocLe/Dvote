@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Dvote/static/css/main.1c32f7f9.chunk.css",
-    "main.js": "/Dvote/static/js/main.8ffc365d.chunk.js",
-    "main.js.map": "/Dvote/static/js/main.8ffc365d.chunk.js.map",
+    "main.css": "/Dvote/static/css/main.5c23043c.chunk.css",
+    "main.js": "/Dvote/static/js/main.5cf6960b.chunk.js",
+    "main.js.map": "/Dvote/static/js/main.5cf6960b.chunk.js.map",
     "runtime-main.js": "/Dvote/static/js/runtime-main.8d492c59.js",
     "runtime-main.js.map": "/Dvote/static/js/runtime-main.8d492c59.js.map",
-    "static/js/2.ef0b1e64.chunk.js": "/Dvote/static/js/2.ef0b1e64.chunk.js",
-    "static/js/2.ef0b1e64.chunk.js.map": "/Dvote/static/js/2.ef0b1e64.chunk.js.map",
+    "static/js/2.fa07142a.chunk.js": "/Dvote/static/js/2.fa07142a.chunk.js",
+    "static/js/2.fa07142a.chunk.js.map": "/Dvote/static/js/2.fa07142a.chunk.js.map",
     "static/js/3.23c6e1b4.chunk.js": "/Dvote/static/js/3.23c6e1b4.chunk.js",
     "static/js/3.23c6e1b4.chunk.js.map": "/Dvote/static/js/3.23c6e1b4.chunk.js.map",
     "index.html": "/Dvote/index.html",
-    "static/css/main.1c32f7f9.chunk.css.map": "/Dvote/static/css/main.1c32f7f9.chunk.css.map",
-    "static/js/2.ef0b1e64.chunk.js.LICENSE.txt": "/Dvote/static/js/2.ef0b1e64.chunk.js.LICENSE.txt"
+    "static/css/main.5c23043c.chunk.css.map": "/Dvote/static/css/main.5c23043c.chunk.css.map",
+    "static/js/2.fa07142a.chunk.js.LICENSE.txt": "/Dvote/static/js/2.fa07142a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8d492c59.js",
-    "static/js/2.ef0b1e64.chunk.js",
-    "static/css/main.1c32f7f9.chunk.css",
-    "static/js/main.8ffc365d.chunk.js"
+    "static/js/2.fa07142a.chunk.js",
+    "static/css/main.5c23043c.chunk.css",
+    "static/js/main.5cf6960b.chunk.js"
   ]
 }
