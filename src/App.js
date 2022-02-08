@@ -81,7 +81,7 @@ const App = () => {
     <div className='app' >
       <div className='body-box'>
         <div>
-          <h3>RANKING</h3>
+          <h3>LEADERBOARD</h3>
           <table className='rankTable'>
             <thead>
               <tr>
@@ -116,15 +116,16 @@ const App = () => {
             <option value='10000' >Pick yours</option>
             {list.map((candidate, index) => <option key={index} value={index} >{candidate.name}</option>)}
           </select>
-          {selectedC != 10000 && <button onClick={vote}>{loading ? 'processing...' : 'Vote'}</button>}
+          <button className={selectedC == 10000 ? 'hidden': null} onClick={vote}>{loading ? 'processing...' : 'Vote'}</button>
         </div>
 
         <div >
           <h2>MANAGER SECTION</h2>
           <div className='onlyManager'>
             <div className='add-form'>
-                <h4>Add candidate!</h4>
+                <h4>ADD CANDIDATE !</h4>
                 <input 
+                  placeholder='Enter full name...'
                   id='input' 
                   value={input} 
                   onChange={
@@ -138,11 +139,10 @@ const App = () => {
                   </button>
             </div>
             <div className='finalize'>
-              <h3>{ winner && winner}</h3>
                 <h4 >
-                  Finalize Election!
+                  {winner ? winner : 'CHECK WINNER !'}
                 </h4>
-                <button onClick={finalizeElection} className='submit-btn'>GET WINNER!</button>
+                <button onClick={finalizeElection} className='submit-btn'>Submit</button>
               </div>
             </div>
 
